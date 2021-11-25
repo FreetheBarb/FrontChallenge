@@ -1,0 +1,44 @@
+.top-list {
+    display: flex;
+    justify-content: space-between;
+}
+table {
+    width: 100%;
+    margin: auto;
+}
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+td,
+th {
+    width: 25%;
+}
+.add-button {
+    margin: auto;
+    width: 20%;
+    margin-right: 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mat-column-name {
+    width: 20%;
+    text-align: center;
+}
+.mat-column-lastName {
+    width: 20%;
+    text-align: center;
+}
+.mat-column-age {
+    width: 20%;
+    text-align: center;
+}
+.mat-column-email {
+    width: 20%;
+    text-align: center;
+}
+.mat-column-actions {
+    width: 20%;
+    text-align: center;
+}

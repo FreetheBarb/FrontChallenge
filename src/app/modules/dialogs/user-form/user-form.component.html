@@ -1,0 +1,34 @@
+<form [formGroup]="userForm" (submit)="saveUser()" class="form-group">
+    <p>
+        <mat-form-field appearance="standard">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="standard">
+            <mat-label>LastName</mat-label>
+            <input matInput formControlName="lastName">
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="standard">
+            <mat-label>Age</mat-label>
+            <input matInput formControlName="age" type="number" min="0" max="100">
+        </mat-form-field>
+    </p>
+
+    <div class="example-container">
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" formControlName="email">
+        </mat-form-field>
+    </div>
+
+    <div>
+        <button mat-button [mat-dialog-close]="false">Cancel</button>
+        <button mat-button type="submit">Submit</button>
+    </div>
+</form>
